@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomAlertController" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WOm-0c-kon">
+                                <rect key="frame" x="155" y="242" width="69" height="30"/>
+                                <state key="normal" title="Dark Alert"/>
+                                <connections>
+                                    <action selector="darkAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="I6Q-l8-ttE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDb-GL-y1U">
+                                <rect key="frame" x="154" y="313" width="72" height="30"/>
+                                <state key="normal" title="Light Alert"/>
+                                <connections>
+                                    <action selector="normalAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="tOZ-ZR-i1S"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4IQ-ML-Y1u">
+                                <rect key="frame" x="146" y="388" width="89" height="30"/>
+                                <state key="normal" title="Vertical Alert"/>
+                                <connections>
+                                    <action selector="normalVerticalAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8r-3c-qnf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kg-hE-Tbe">
+                                <rect key="frame" x="153" y="450" width="72" height="30"/>
+                                <state key="normal" title="More Alert"/>
+                                <connections>
+                                    <action selector="normalMoreAlert" destination="BYZ-38-t0r" eventType="touchUpInside" id="yZ9-VC-kQ9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BDb-GL-y1U" firstAttribute="top" secondItem="WOm-0c-kon" secondAttribute="bottom" constant="41" id="1SH-uo-DzG"/>
+                            <constraint firstItem="WOm-0c-kon" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="198" id="DPg-EV-vMw"/>
+                            <constraint firstItem="2Kg-hE-Tbe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="153" id="EUC-dM-awD"/>
+                            <constraint firstItem="2Kg-hE-Tbe" firstAttribute="top" secondItem="4IQ-ML-Y1u" secondAttribute="bottom" constant="32" id="G3u-wc-4c6"/>
+                            <constraint firstItem="BDb-GL-y1U" firstAttribute="centerX" secondItem="4IQ-ML-Y1u" secondAttribute="centerX" id="Tze-tn-bn0"/>
+                            <constraint firstItem="WOm-0c-kon" firstAttribute="centerX" secondItem="BDb-GL-y1U" secondAttribute="centerX" id="XPG-qK-jFR"/>
+                            <constraint firstItem="4IQ-ML-Y1u" firstAttribute="top" secondItem="BDb-GL-y1U" secondAttribute="bottom" constant="45" id="bvF-uU-nRD"/>
+                            <constraint firstItem="WOm-0c-kon" firstAttribute="centerX" secondItem="2Kg-hE-Tbe" secondAttribute="centerX" id="d1X-zV-YuF"/>
+                            <constraint firstItem="BDb-GL-y1U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="qnj-pN-lgY"/>
+                            <constraint firstItem="4IQ-ML-Y1u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="146" id="tSA-oZ-FEi"/>
+                            <constraint firstItem="WOm-0c-kon" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="zXw-C0-Qz9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="118"/>
+        </scene>
+    </scenes>
+</document>
